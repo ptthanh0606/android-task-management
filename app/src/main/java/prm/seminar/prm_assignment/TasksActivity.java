@@ -138,7 +138,7 @@ public class TasksActivity extends AppCompatActivity {
     }
 
     private void renderTasks(List<TaskDTO> tasks, String taskStatus) {
-        for (TaskDTO task: tasks) {
+        for (final TaskDTO task: tasks) {
             // Task container generator
             LinearLayout taskContainer = new LinearLayout(TasksActivity.this);
             LinearLayout.LayoutParams taskContainerLayoutParam = new LinearLayout.LayoutParams(
@@ -193,11 +193,20 @@ public class TasksActivity extends AppCompatActivity {
             taskContainer.addView(txtTaskDesc);
             taskContainer.addView(txtCreateBy);
             taskContainer.addView(txtCreatedDate);
+            // Set onClickListener
+            taskContainer.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent = new Intent(TasksActivity.this, TaskDetailActivity.class);
+                    intent.putExtra("TASK_INFO", task);
+                    startActivity(intent);
+                }
+            });
 
             String numberOfTasks = "(" + tasks.size() + ")";
             switch (taskStatus) {
                 case "Open": {
-                    taskContainer.setBackgroundColor(Color.parseColor("#F8D9B5"));
+                    taskContainer.setBackgroundColor(Color.parseColor("#DCD3FE"));
                     openTasksContainer.addView(taskContainer);
                     numberOfOpenTask.setText(numberOfTasks);
                 } break;

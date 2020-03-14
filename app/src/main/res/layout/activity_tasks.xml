@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".TasksActivity"
-    android:orientation="vertical">
+    tools:context=".TasksActivity">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -61,15 +60,15 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:layout_marginTop="32dp">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Open "
                 android:textSize="16sp"
                 android:textStyle="bold"
-                android:textColor="#848484"
-                android:layout_marginTop="16dp"/>
+                android:textColor="#848484"/>
             <TextView
                 android:id="@+id/numberOfOpenTask"
                 android:layout_width="wrap_content"
@@ -77,8 +76,7 @@
                 android:text="(0)"
                 android:textSize="16sp"
                 android:textStyle="bold"
-                android:textColor="#848484"
-                android:layout_marginTop="16dp"/>
+                android:textColor="#848484"/>
         </LinearLayout>
 
         <LinearLayout
@@ -92,15 +90,15 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:layout_marginTop="32dp">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="In Progress "
                 android:textSize="16sp"
                 android:textStyle="bold"
-                android:textColor="#848484"
-                android:layout_marginTop="16dp"/>
+                android:textColor="#848484"/>
             <TextView
                 android:id="@+id/numberOfInprogressTask"
                 android:layout_width="wrap_content"
@@ -108,8 +106,7 @@
                 android:text="(0)"
                 android:textSize="16sp"
                 android:textStyle="bold"
-                android:textColor="#848484"
-                android:layout_marginTop="16dp"/>
+                android:textColor="#848484"/>
         </LinearLayout>
 
         <LinearLayout
@@ -123,15 +120,15 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:layout_marginTop="32dp">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Done "
                 android:textSize="16sp"
                 android:textStyle="bold"
-                android:textColor="#848484"
-                android:layout_marginTop="16dp"/>
+                android:textColor="#848484"/>
             <TextView
                 android:id="@+id/numberOfDoneTask"
                 android:layout_width="wrap_content"
@@ -139,8 +136,7 @@
                 android:text="(0)"
                 android:textSize="16sp"
                 android:textStyle="bold"
-                android:textColor="#848484"
-                android:layout_marginTop="16dp"/>
+                android:textColor="#848484"/>
         </LinearLayout>
 
         <LinearLayout
@@ -154,15 +150,15 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:layout_marginTop="32dp">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Overdue "
                 android:textSize="16sp"
                 android:textStyle="bold"
-                android:textColor="#848484"
-                android:layout_marginTop="16dp"/>
+                android:textColor="#848484"/>
             <TextView
                 android:id="@+id/numberOfOverdueTask"
                 android:layout_width="wrap_content"
@@ -170,8 +166,7 @@
                 android:text="(0)"
                 android:textSize="16sp"
                 android:textStyle="bold"
-                android:textColor="#848484"
-                android:layout_marginTop="16dp"/>
+                android:textColor="#848484"/>
         </LinearLayout>
 
         <LinearLayout
@@ -185,15 +180,15 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:layout_marginTop="32dp">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Pending "
                 android:textSize="16sp"
                 android:textStyle="bold"
-                android:textColor="#848484"
-                android:layout_marginTop="16dp"/>
+                android:textColor="#848484"/>
             <TextView
                 android:id="@+id/numberOfPendingTask"
                 android:layout_width="wrap_content"
@@ -201,8 +196,7 @@
                 android:text="(0)"
                 android:textSize="16sp"
                 android:textStyle="bold"
-                android:textColor="#848484"
-                android:layout_marginTop="16dp"/>
+                android:textColor="#848484"/>
         </LinearLayout>
 
         <LinearLayout
