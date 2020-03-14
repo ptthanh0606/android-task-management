@@ -4,79 +4,61 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    tools:context=".LoginActivity"
     android:orientation="vertical"
     android:paddingTop="32dp"
     android:paddingHorizontal="16dp">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Welcome, "
-            android:textSize="16sp"
-            android:textStyle="bold"
-            android:textColor="#222831"/>
-        <TextView
-            android:id="@+id/txtUsername"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="ThanhPT18"
-            android:textSize="16sp"
-            android:textStyle="normal"
-            android:textColor="#222831"/>
-    </LinearLayout>
-
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Your task"
-        android:textSize="32sp"
+        android:text="Taskit.io"
+        android:textSize="40sp"
         android:textStyle="bold"
         android:textColor="#222831"
-        android:layout_marginTop="32dp"/>
-
+        android:layout_marginTop="64dp"
+        android:gravity="center"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Open"
+        android:text="Please login"
         android:textSize="16sp"
         android:textStyle="bold"
         android:textColor="#B6B6B6"
-        android:layout_marginTop="16dp"/>
+        android:gravity="center"/>
 
-    <ScrollView
+    <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-            <LinearLayout
-                android:id="@+id/containerTask"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_marginTop="8dp"
-                android:background="#EEEEEE"
-                android:padding="16dp"
-                >
-                <TextView
-                    android:id="@+id/txtTaskID"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="BODR0202"/>
-                <TextView
-                    android:id="@+id/txtTaskName"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text=""
-                    android:textSize="21sp"
-                    android:textColor="#222831"/>
-            </LinearLayout>
-        </LinearLayout>
-    </ScrollView>
+        android:layout_height="wrap_content"
+        android:text="Username"
+        android:layout_marginTop="32dp"/>
+
+    <EditText
+        android:id="@+id/txtUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:layout_marginTop="32dp"/>
+
+    <EditText
+        android:id="@+id/txtPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:layout_gravity="bottom"
+        android:background="#00ADB5"
+        android:textColor="#EFEFEF"
+        android:textStyle="bold"
+        android:layout_marginTop="32dp"
+        android:onClick="clickToLogin"/>
 </LinearLayout>

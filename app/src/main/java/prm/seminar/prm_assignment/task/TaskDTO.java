@@ -1,6 +1,8 @@
 package prm.seminar.prm_assignment.task;
 
-public class TaskDTO {
+import java.io.Serializable;
+
+public class TaskDTO implements Serializable {
     private String taskID;
     private String taskName;
     private String sourceTaskID;
